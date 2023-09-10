@@ -63,6 +63,10 @@ body{
     z-index: 10;
     font-family: 'Press Start 2P', cursive;
     width: 180%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 .btn{
     position: absolute;
@@ -75,6 +79,10 @@ body{
     padding: 20px 40px;
     border-radius: 10%;
     transform-origin: bottom;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 #jumpBtn{
