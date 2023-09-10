@@ -315,6 +315,31 @@ window.addEventListener("keyup", (event) => {
     }
 });
 
+jumpBtn.addEventListener("touchstart", ()=>{
+    if(!isGaming){
+        gameStart();
+    }
+        
+
+    if(player.isJumping) return;
+    player.status = 2;
+    player.isJumping = true;
+    player.speedY = -18 * p;
+    player.statusCheck();
+});
+slideBtn.addEventListener("touchstart", ()=>{
+    if(!isGaming){
+        gameStart();
+    }
+
+    player.status = 3;
+    player.statusCheck();
+});
+slideBtn.addEventListener("touchend", ()=>{
+    player.status = 1;
+    player.statusCheck();
+});
+
 jumpBtn.addEventListener("mousedown", ()=>{
     if(!isGaming){
         gameStart();
